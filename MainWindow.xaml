@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DAS_DW"
         mc:Ignorable="d"
-        Icon="C:\nntdat\2. Code\WPF\DAS_DW\analysis.ico"
+        Icon="Resources\analysis.ico"
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         Title="MainWindow" Height="450" Width="800">  
