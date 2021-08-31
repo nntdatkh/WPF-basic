@@ -57,6 +57,29 @@ namespace DAS_DW
             lblCityName.Content = cityName;
         }
 
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+        }
+
+        private void ckbAllFeatures_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            bool newVal = (ckbAllFeatures.IsChecked == true);
+            ckbFeatureAbc.IsChecked = newVal;
+            ckbFeatureXyz.IsChecked = newVal;
+            ckbFeatureWww.IsChecked = newVal;
+
+        }
+
+        private void ckbFeature_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            ckbAllFeatures.IsChecked = null;
+            if ((ckbFeatureAbc.IsChecked == true) && (ckbFeatureXyz.IsChecked == true) && (ckbFeatureWww.IsChecked == true))
+                ckbAllFeatures.IsChecked = true;
+
+            if ((ckbFeatureAbc.IsChecked == false) && (ckbFeatureXyz.IsChecked == false) && (ckbFeatureWww.IsChecked == false))
+                ckbAllFeatures.IsChecked = false;
+        }
     }
 
 }
