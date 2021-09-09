@@ -77,7 +77,7 @@
         <!--Radio Button advance - using groupname - https://wpf-tutorial.com/vi/19/cac-control-c%C6%A1-b%E1%BA%A3n/radiobutton-control/-->
         <StackPanel Width="200" Height="150" Margin="26,252,566,21">
             <Label FontWeight="Bold">Are you ready?</Label>
-            <RadioButton GroupName="ready">Yes</RadioButton>
+            <RadioButton GroupName="ready" ToolTip="this is tooltip">Yes</RadioButton>
             <RadioButton GroupName="ready">No</RadioButton>
             <RadioButton GroupName="ready" IsChecked="True">Maybe</RadioButton>
 
